@@ -20,19 +20,19 @@ main(){
 						scanf("%d",&mat[i][j]);
 					}
 				}
-				printf("Digite o preço do produto %d: ",i+1);
+				printf("Digite o preÃ§o do produto %d: ",i+1);
 				scanf("%f",&vet[i]);
 			}
 		}
 		
 		
 		//Menu
-		printf("\n\n	MENU\nDigite uma opção para continuar\n1 - Exibir produtos\n2 - Vender produto\n3 - Sair do programa\n");
+		printf("\n\n	MENU\nDigite uma opÃ§Ã£o para continuar\n1 - Exibir produtos\n2 - Vender produto\n3 - Sair do programa\n");
 		scanf("%d",&op);
 		opInv=false;
 		
 		if(op==1){//Exibir produtos
-			printf("\nID - QTD - PREÇO");
+			printf("\nID - QTD - PREÃ‡O");
 			for(int i=0;i<3;i++){
 				for(int j=0;j<2;j++){
 					if(j==0){
@@ -62,7 +62,7 @@ main(){
 					}
 				}
 				if(idEncontrado==false){
-					printf("ID inválido, tente novamente \n");
+					printf("ID invÃ¡lido, tente novamente \n");
 				}
 			}while(idEncontrado==false);
 			idEncontrado=false;
@@ -89,10 +89,10 @@ main(){
 			}
 			opInv=true;	
 		}else if(op==3){
-			printf("Você decidiu sair do programa! Volte sempre\n");
+			printf("VocÃª decidiu sair do programa! Volte sempre\n");
 			sair=true;
 		}else{
-			printf("Você digitou uma opção inválida, tente novamente:");
+			printf("VocÃª digitou uma opÃ§Ã£o invÃ¡lida, tente novamente:");
 			opInv=true;
 		}
 	}
